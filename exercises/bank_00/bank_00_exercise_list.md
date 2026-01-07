@@ -15,7 +15,7 @@ Alter the code to demonstrate how "or" may be used in conditionals. You must not
 Write code demonstrating the use of a `for` loop for incremental increase of a given variable.
 
 # 6. Exercise. Loops Intermediate
-Write code demonstrating how to use a `for` loop to  
+Write code demonstrating how to use a `for` loop to calculate a total after several iterations, adding a fixed amount in each iteration and printing the running total.
 
 # 7. Exercise. Collections Access Simple
 Write code demonstrating how to access data within a given list.
