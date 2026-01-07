@@ -1,3 +1,19 @@
+# Overview
+Bank 00 of exercises is a collection of exercises for beginners or enthusiasts. It will help assess your understanding of Python and coding in general, especially under guidance from someone else, including a LLM. If you are using a LLM to learn, be sure to instruct it to not solve the exercises for you, but to guide you through the process of solving them yourself, or to review your code and provide feedback.
+
+## Tips:
+- You should read the in-exercise comments carefully to understand the exercise requirements, as they provide important instructions and guidelines.
+- You should also read the exercise description to understand the expected outcome.
+- You may make use of any resources you like, including the internet, but should not make use of any code that you did not write yourself, as this would only be denying yourself the opportunity to learn from experience.
+- You may also add comments freely in your code resolutions, as this will not affect the outcome of the exercise and is good practice to document changes and code logic.
+
+## Setup
+- You can clone this repository to your local machine and make use of it as a reference for the exercises.
+- Alternatively, you may simply [Download](https://github.com/NerArth/PythonEducationalExamples/archive/refs/heads/main.zip) the repository as a zip file and extract it to your local machine.
+- Or, you may simply copy-paste exercise code or download individual files from this repository.
+
+---
+
 # 1. Exercise. Variable Assignment Simple
 Write code with 4 different variable assignments. You must demonstrate different types of data being assigned to each variable.
 You may use the expected variable names or alter the names to your own.
@@ -23,7 +39,7 @@ Write code demonstrating how to access data within a given list.
 # 8. Exercise. Collections Intermediate
 Write code demonstrating how to add data to a given list.
 
-# 9. Exercise. Collections Advanced
+# 9. Exercise. Collections Expert
 Write code demonstrating how to create a new list.
 
 # 10. Exercise. Key-Value Pairs Simple
