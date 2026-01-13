@@ -83,18 +83,29 @@ class Resistances:
     each enemy has.
     """
     # We shouldn't need to set default values here because the Resistance class already has default values in its constructor
+    # The `**keywordarguments` is a dictionary of arguments passed to the constructor.
+    # - Python convention usually shortens this to `**kwargs`
     def __init__(self, **keywordarguments):
-        # This helper function decides: do we pass a value, or skip it?
-        #   - If we skip it, the Resistance class default (0) is automatically used.
-        
-        # The `**keywordarguments` is a dictionary of arguments passed to the constructor.
-        #   - Python convention usually shortens this to `**kwargs`
         def create(name, key):
+            """
+            `create` helper function
+            This function decides: do we pass a value, or skip it?
+            - If we skip it, the Resistance class default (0) is automatically used.
+            - This function will only exist for the duration of the constructor.
+            - We will never need it outside of when we create a new `Resistances()` object,
+            so this is a good example of a function that is only needed for a specific purpose.
+            """
             if key in keywordarguments:
                 return Resistance(name, keywordarguments[key])
             return Resistance(name) # Only 1 argument = default value triggered!
         
-        # By passing 
+        # We set the object's properties using the helper function above
+        # - Therefore, `self.resistances` is a list of `Resistance` objects
+        # - We use the helper function to create each `Resistance` object
+        # - The order of the resistances is important, as it will be used to display them in the `__str__` method
+        # - Finally, we use the shorthand strings "fi", "co", etc. as a way being able to be selective about
+        # which resistances we want to set values for, when actually calling the constructor like `Resistances(co=10, ph=20)`,
+        # letting us omit values we don't want to set
         self.resistances = [
             create("fire",      "fi"),
             create("cold",      "co"),
